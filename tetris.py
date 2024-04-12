@@ -15,7 +15,8 @@ colors = ((0, 0, 225), (0, 225, 0), (225, 0, 0), (225, 225, 0))  # синий, �
 lightcolors = ((30, 30, 255), (50, 255, 50), (255, 30, 30),
                (255, 255, 30))  # светло-синий, светло-зеленый, светло-красный, светло-желтый
 
-white, gray, black = (255, 255, 255), (185, 185, 185), (0, 0, 0)
+# white, gray, black = (255, 255, 255), (185, 185, 185), (0, 0, 0)
+white, gray, yellow = (255, 255, 255), (185, 185, 185), (225, 225, 0)
 # brd_color, bg_color, txt_color, title_color, info_color = white, black, white, colors[3], colors[0]
 brd_color, txt_color, title_color, info_color = white, white, colors[3], colors[0]
 bg_color = (31, 206, 203)
@@ -397,7 +398,7 @@ def gamecup(cup):
 def drawTitle():
     titleSurf = big_font.render('Тетрис Lite', True, title_color)
     titleRect = titleSurf.get_rect()
-    titleRect.topleft = (window_w - 360, 20)
+    titleRect.topleft = (window_w - 365, 20)
     display_surf.blit(titleSurf, titleRect)
 
 
